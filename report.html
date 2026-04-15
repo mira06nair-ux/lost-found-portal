@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="title"></h2>
+
+<form onsubmit="saveItem(event)">
+  <input type="text" id="name" placeholder="Item Name" required>
+  <input type="text" id="description" placeholder="Description" required>
+  <input type="text" id="location" placeholder="Location" required>
+  <input type="text" id="contact" placeholder="Contact Info" required>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+let params = new URLSearchParams(window.location.search);
+let type = params.get("type");
+
+document.getElementById("title").innerText =
+  type === "lost" ? "Report Lost Item" : "Report Found Item";
+
+function saveItem(e) {
+  e.preventDefault();
+
+  let item = {
+    type: type,
+    name: document.getElementById("name").value,
+    description: document.getElementById("description").value,
+    location: document.getElementById("location").value,
+    contact: document.getElementById("contact").value
+  };
+
+  let items = JSON.parse(localStorage.getItem("items")) || [];
+  items.push(item);
+
+  localStorage.setItem("items", JSON.stringify(items));
+
+  alert("Item saved successfully!");
+  window.location.href = "listings.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  font-family: Arial;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.lost {
+  background-color: red;
+}
+
+.found {
+  background-color: green;
+}
+
+.view {
+  background-color: #3498db; /* nice blue */
+}
+
+.card {
+  background: rgb(213, 40, 161);
+  margin: 10px auto;
+  padding: 15px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px gray;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
