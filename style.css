@@ -4,6 +4,19 @@ body {
   text-align: center;
 }
 
+.submit-btn {
+  background-color: #3498db;  /* blue */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
 .container {
   margin-top: 50px;
 }
