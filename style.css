@@ -4,6 +4,18 @@ body {
   text-align: center;
 }
 
+.container {
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .submit-btn {
   background-color: #3498db;  /* blue */
   color: white;
@@ -17,18 +29,6 @@ body {
   background-color: #2980b9;
 }
 
-.container {
-  margin-top: 50px;
-}
-
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
 .lost {
   background-color: red;
 }
@@ -39,6 +39,21 @@ button {
 
 .view {
   background-color: #3498db; /* nice blue */
+}
+
+.card {
+  background: rgb(184, 162, 208);
+  margin: 10px auto;
+  padding: 15px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px gray;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
 }
 
 .card {
